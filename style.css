@@ -47,7 +47,7 @@ input {
         .container main form#survey-form fieldset div {
           margin-bottom: 1em; }
         .container main form#survey-form fieldset:nth-of-type(3) label:nth-of-type(1) {
-          margin-bottom: 5%; }
+          margin-bottom: 3%; }
         .container main form#survey-form fieldset:nth-of-type(3) label {
           margin-bottom: 2%; }
         .container main form#survey-form fieldset:nth-of-type(5) label {
@@ -115,11 +115,78 @@ input {
         cursor: pointer; }
 
 #fivepercentmargin {
-  margin-bottom: 5%; }
+  margin-bottom: 3%; }
 
+@media screen and (max-width: 2560px) {
+  .container {
+    max-width: 1680px; }
+    .container #title {
+      font-size: 4rem; }
+    .container #description {
+      font-size: 2.5rem; }
+    .container main form#survey-form fieldset div {
+      margin-bottom: 2em; }
+    .container main form#survey-form label {
+      font-size: 2.5rem; }
+    .container main form#survey-form .form-control {
+      height: 80px;
+      font-size: 50px; }
+    .container main form#survey-form #dropdown {
+      height: 80px;
+      font-size: 2em; }
+    .container main form#survey-form .little-letters {
+      font-size: 0.8em; }
+    .container main form#survey-form input[name="prefer"] {
+      min-height: 1.5rem;
+      min-width: 1.5rem; }
+    .container main form#survey-form input[name="option-of-user-answer"] {
+      min-height: 1.5rem;
+      min-width: 1.5rem; }
+    .container main form#survey-form textarea[name="textarea"] {
+      min-height: 200px;
+      font-size: 2em; }
+    .container main form#survey-form #submit {
+      height: 100px;
+      font-size: 3em; } }
+@media screen and (max-width: 1680px) {
+  .container {
+    max-width: 1240px; }
+    .container main form#survey-form label {
+      font-size: 2rem; }
+    .container main form#survey-form .form-control {
+      height: 50px;
+      font-size: 35px; }
+    .container main form#survey-form #dropdown {
+      height: 50px; } }
 @media screen and (max-width: 1440px) {
   .container {
-    max-width: 720px; } }
+    max-width: 720px; }
+    .container #title {
+      font-size: 1.7rem; }
+    .container #description {
+      font-size: large; }
+    .container main form#survey-form fieldset div {
+      margin-bottom: 1em; }
+    .container main form#survey-form label {
+      font-size: large; }
+    .container main form#survey-form .form-control {
+      height: 35px;
+      font-size: 16px; }
+    .container main form#survey-form #dropdown {
+      height: 35px;
+      font-size: 16px; }
+    .container main form#survey-form input[name="option-of-user-answer"] {
+      min-height: 1.25rem;
+      min-width: 1.25rem; }
+    .container main form#survey-form input[name="prefer"] {
+      min-height: 1.25rem;
+      min-width: 1.25rem; }
+    .container main form#survey-form textarea[name="textarea"] {
+      min-height: 110px;
+      font-size: 17px; }
+    .container main form#survey-form #submit {
+      height: 46px;
+      font-size: unset; } }
 @media screen and (max-width: 780px) {
   .container {
     max-width: 500px; } }

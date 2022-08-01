@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap";
-
+// this is default value.
 html {
     font-size: 18px;
 }
@@ -24,7 +24,7 @@ body {
     font-family: 'Poppins',
     sans-serif;
 }
-
+//main part
 input {
     margin: 0;
 }
@@ -64,9 +64,10 @@ input {
                 }
 
                 &:nth-of-type(3) {
-                    label:nth-of-type(1){
-                        margin-bottom:5%;
-                    }                   
+                    label:nth-of-type(1) {
+                        margin-bottom: 3%;
+                    }
+
                     label {
                         margin-bottom: 2%;
                     }
@@ -164,20 +165,163 @@ input {
 }
 
 #fivepercentmargin {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+}
+
+//@media
+
+
+@media screen and (max-width:2560px) {
+
+    .container {
+        max-width: 1680px;
+
+        #title {
+            font-size: 4rem;
+        }
+
+        #description {
+            font-size: 2.5rem;
+        }
+
+        main {
+
+            form#survey-form {
+
+                fieldset {
+                    div {
+                        margin-bottom: 2em;
+                    }
+                }
+
+                label {
+                    font-size: 2.5rem;
+                }
+
+                .form-control {
+                    height: 80px;
+                    font-size: 50px;
+                }
+
+                #dropdown {
+                    height: 80px;
+                    font-size: 2em;
+                }
+
+                .little-letters {
+                    font-size: 0.8em;
+                }
+
+                input[name="prefer"] {
+                    min-height: 1.5rem;
+                    min-width: 1.5rem;
+                }
+
+                input[name="option-of-user-answer"] {
+                    min-height: 1.5rem;
+                    min-width: 1.5rem;
+                }
+
+                textarea[name="textarea"] {
+                    min-height: 200px;
+                    font-size: 2em;
+                }
+
+                #submit {
+                    height: 100px;
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1680px) {
+    .container {
+        max-width: 1240px;
+
+        main {
+
+            form#survey-form {
+
+                label {
+                    font-size: 2rem;
+                }
+
+                .form-control {
+                    height: 50px;
+                    font-size: 35px;
+                }
+
+                #dropdown {
+                    height: 50px;
+                }
+
+            }
+        }
+    }
 }
 
 @media screen and (max-width:1440px) {
     .container {
         max-width: 720px;
+
+        #title {
+            font-size: 1.7rem;
+        }
+
+        #description {
+            font-size: large;
+        }
+
+        main {
+
+            form#survey-form {
+
+                fieldset {
+                    div {
+                        margin-bottom: 1em;
+                    }
+                }
+
+                label {
+                    font-size: large;
+                }
+
+                .form-control {
+                    height: 35px;
+                    font-size: 16px;
+                }
+
+                #dropdown {
+                    height: 35px;
+                    font-size:16px;
+                }
+
+                input[name="option-of-user-answer"] {
+                    min-height: 1.25rem;
+                    min-width: 1.25rem;
+                }
+
+                input[name="prefer"] {
+                    min-height: 1.25rem;
+                    min-width: 1.25rem;
+                }
+
+                textarea[name="textarea"] {
+                    min-height: 110px;
+                    font-size: 17px;
+                }
+
+                #submit {
+                    height: 46px;
+                    font-size: unset;
+                }
+            }
+        }
     }
 }
 
-//  @media screen and (max-width:1115px) {
-//      .container {
-//          max-width: 720px;
-//      }
-//   }
 @media screen and (max-width:780px) {
     .container {
         max-width: 500px;
